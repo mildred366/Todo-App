@@ -6,19 +6,19 @@
 
 :root {
     --purple: hsl(259, 100%, 65%);
-    --light-red: hsl(0, 100%, 67%);
-    --white: hsl(0, 0%, 100%);
-    --off-white: hsl(0, 0%, 94%);
-    --light-grey: hsl(0, 0%, 86%);
-    --smokey-grey: hsl(0, 1%, 44%);
-    --off-black: hsl(0, 0%, 8%)
+    /* --light-red: hsl(0, 100%, 67%); */
+    --light-grey: hsl(0, 0%, 98%);
+    --lgrayish-blue: hsl(236, 33%, 92%);
+    --vlight-grayish-blus: hsl(233, 11%, 84%);
+    --dark-grayish-blue: hsl(236, 9%, 61%);
+    --vdark-grayish-blue: hsl(235, 19%, 35%);
 }
 
 .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+    font-size: 11px;
+    text-align: center;
+}
 
-    .attribution a {
-      color: var(--purple);
-    }
+.attribution a {
+    color: var(--purple);
+}
