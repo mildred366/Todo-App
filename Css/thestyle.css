@@ -27,8 +27,10 @@
 .Container {
     display: flex;
     flex-direction: row;
-    background-color: var(--vdark-grayish-blue);
+    padding: 5rem 8rem 5rem 8rem;
     justify-content: space-evenly;
+    font-size: 45px;
+    align-items: center;
     position: relative;
     /* margin-top: -100px; */
 
@@ -37,4 +39,11 @@
 .Container h3 {
     letter-spacing: 8px;
     color: var(--light-grey);
+    /* padding-left: 70px; */
+}
+
+.Iconmoon{
+    display: block;
+    margin-bottom: 15px;
+    margin-left:-40px;
 }
