@@ -7,10 +7,10 @@
 
 :root {
     --purple: hsl(259, 100%, 65%);
-    /* --light-red: hsl(0, 100%, 67%); */
+    --white: #ffffff;
     --light-grey: hsl(0, 0%, 98%);
     --lgrayish-blue: hsl(236, 33%, 92%);
-    --vlight-grayish-blus: hsl(233, 11%, 84%);
+    --vlight-grayish-blue: hsl(233, 11%, 84%);
     --dark-grayish-blue: hsl(236, 9%, 61%);
     --vdark-grayish-blue: hsl(235, 19%, 35%);
 }
@@ -24,10 +24,14 @@
     color: var(--purple);
 }
 
+body{
+    background-color: var(--light-grey);
+    /* height: 100%; */
+}
 .Container {
     display: flex;
     flex-direction: row;
-    padding: 5rem 8rem 5rem 8rem;
+    padding: 5rem 8rem 3rem 8rem;
     justify-content: space-evenly;
     font-size: 45px;
     align-items: center;
@@ -38,12 +42,60 @@
 
 .Container h3 {
     letter-spacing: 8px;
-    color: var(--light-grey);
-    /* padding-left: 70px; */
+    color: var(--light-grey)
 }
 
-.Iconmoon{
+.Iconmoon {
     display: block;
     margin-bottom: 15px;
-    margin-left:-40px;
+    margin-left: -40px;
+}
+
+.formContainer {
+    width: 32rem;
+    background-color: var(--white);
+    border-radius: 0.2rem;
+    position: relative;
+    height: 4rem;  
+    margin-left: 29rem ;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 255, 255, 0.2);
+}
+
+
+#fname {
+    font-size: 20px;
+    border: none;
+}
+
+#newtask input{
+    outline: none;
+    background-color: var(--white);
+}
+
+.mainContainer button {
+    border-radius: 50%;
+    border: 1px solid var(--lgrayish-blue);
+    width: 25px;
+    height: 25px;
+    margin: -0.25rem 1.3rem  0 0;
+    background-color: var(--white);  
+}
+
+.mainContainer .formGroup {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 1.3rem 0 0 0.8rem;
+}
+
+#tasks{
+    border-radius: 10px;
+    width: 32rem;
+    background-color: var(--white);
+    border-radius: 0.2rem;
+    position: relative;
+    height: 24rem;
+    padding: 5px 20px;
+    margin: 1.3rem 29rem ;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
