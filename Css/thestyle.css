@@ -26,8 +26,18 @@
 
 body{
     background-color: var(--light-grey);
-    /* height: 100%; */
+    background-image: url("/images/bg-desktop-light.jpg");
+    /* width: 100%; */
+    background-repeat: no-repeat;
 }
+
+/* .targetToggle {
+        background-color: var(--light-grey);
+        background-image: url("/images/bg-desktop-dark.jpg");
+        background-repeat: no-repeat;
+        width: 100%;
+    } */
+
 .Container {
     display: flex;
     flex-direction: row;
@@ -56,8 +66,8 @@ body{
     background-color: var(--white);
     border-radius: 0.2rem;
     position: relative;
-    height: 4rem;  
-    margin-left: 29rem ;
+    height: 4rem;
+    margin-left: 29rem;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 255, 255, 0.2);
 }
 
@@ -67,7 +77,7 @@ body{
     border: none;
 }
 
-#newtask input{
+#newtask input {
     outline: none;
     background-color: var(--white);
 }
@@ -77,8 +87,8 @@ body{
     border: 1px solid var(--lgrayish-blue);
     width: 25px;
     height: 25px;
-    margin: -0.25rem 1.3rem  0 0;
-    background-color: var(--white);  
+    margin: -0.25rem 1.3rem 0 0;
+    background-color: var(--white);
 }
 
 .mainContainer .formGroup {
@@ -88,14 +98,103 @@ body{
     padding: 1.3rem 0 0 0.8rem;
 }
 
-#tasks{
+#tasks {
     border-radius: 10px;
     width: 32rem;
     background-color: var(--white);
     border-radius: 0.2rem;
     position: relative;
-    height: 24rem;
-    padding: 5px 20px;
-    margin: 1.3rem 29rem ;
+    height: 28rem;
+    padding: 0 20px;
+    margin: 1.3rem 29rem;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.tasksDiv{
+    color: var(--vlight-grayish-blue);
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.tasksDiv p:hover {
+    color: var(--vdark-grayish-blue);
+}
+
+.clear{
+    color: var(--vlight-grayish-blue);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 20rem;
+}
+
+.clear p:hover {
+    color: var(--vdark-grayish-blue);
+}
+
+@media (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: var(--light-grey);
+        background-image: url("/images/bg-mobile-light.jpg");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Container {
+        /* display: flex;
+        flex-direction: row;
+        align-items: center; */
+        padding-top: 45px;
+        padding-left: 195px;
+        padding-bottom: 45px;
+        font-size: 25px;
+        justify-content: center;
+        position: relative;
+    }
+
+    .Iconmoon {
+        width: 20px; 
+        margin: -4px 0 0 180px;
+    }
+
+    #newtask{
+    width: 25rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    height: 4rem;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 255, 255, 0.2); */
+}
+
+.mainContainer .formGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem 0 0 4rem;
+    width: 25rem;
+    margin-right: 20px;
+}
+
+#fname {
+    font-size: 20px;
+    border: none;
+}
+
+.attribution {
+    /* font-size: 11px; */
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+
 }

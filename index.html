@@ -12,17 +12,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@700&display=swap"
     rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <title>Todo app</title>
 </head>
 
 <body>
   <main>
     <div class="mainContainer">
-      <img src="./images/bg-desktop-light.jpg" alt="background-image" style="position: absolute;">
+      <!-- <img src="./images/bg-desktop-light.jpg" alt="background-image" style="position: absolute;"> -->
       <div class="Container">
         <h3>TODO</h3>
         <img src="./images/icon-moon.svg" alt="iconMoon" width="30px" class="Iconmoon">
       </div>
+
+      <!-- <div class = "targetToggle">
+         <h3>TODO</h3>
+        <img src="./images/icon-sun.svg" alt="iconMoon" width="30px" class="Iconsun">
+      </div> -->
+
 
       <div class="formContainer">
         <div id="newtask">
@@ -36,6 +43,15 @@
       </div>
       <div id="tasks">
         <ul id="taskList"></ul>
+        <div class="clear">
+          <p>5 items left</p>
+          <p>Clear Completed</p>
+        </div>
+        <div class="tasksDiv">
+          <p>All</p>
+          <p>Active</p>
+          <p>Completed</p>
+        </div>
       </div>
       </form>
     </div>
@@ -49,6 +65,17 @@
   </footer>
 
   <script src="./Js/thescript.js"></script>
+  <!-- <script>
+   
+         $(document).ready(function() {
+
+            $(".Iconmoon").click(function(){
+               $(".Iconsun").toggle( ); 
+            });
+         });
+			
+      </script> -->
+
 </body>
 
 </html>
